@@ -8,7 +8,7 @@
         <title>Scrolling Nav - Start Bootstrap Template</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet"/>
+        <link href="../static/css/styles.css" rel="stylesheet"/>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -35,16 +35,16 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-primary bg-gradient text-white">
+        <header>
             <div class="container px-4 text-center">
                 <h1 class="fw-bolder">Sign Now</h1>
                 <p class="lead">Live sign language for the deaf community.</p>
-                <a class="btn btn-lg btn-light" href="#">Use our web-app!</a>
-                <a class="btn btn-lg btn-light" href="#">For a tutorial!</a>
+                <a class="btn btn-lg btn-dark" href="#">Use our web-app!</a>
+                <a class="btn btn-lg btn-dark" href="#tutorial">For a tutorial!</a>
             </div>
         </header>
         <!-- About section-->
-        <section id="about" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <section id="about" class = "bg-primary bg-gradient" style="padding-top: 4rem; padding-bottom: 4rem;">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
@@ -54,21 +54,35 @@
             </div>
         </section>
         <!-- Services section-->
-        <section class="bg-light" id="services">
+        <section class="bg-light" id="app_explain">
             <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
+                <div class="row gx-4 justify-content-sm-end">
+                    <div class="col-lg-5">
                         <h2>Our app is here to help!</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                        <p class="lead" style="line-height: 1.7;">Our innovative web-app is a service-based technology that connects between the deaf community and sign language interpreters.<br>We offer a variety of video call options including call-back, on-demand, and pre-scheduled calls, all with minimum clicks.<br>And it is all <b>FOR FREE!</b></p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Contact section-->
-        <section id="contact">
+        <section id="tutorial">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-6 justify-content-center text-center">
+                        <h2><b>Don't know where to start? Watch this!</b></h2>
+                        <br><br>
+                        	<iframe width="560" height="315" src="https://www.youtube.com/embed/z8Mm88jepsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        	<br><br><br>
+                        	<a class="btn btn-lg btn-dark align-self-center" href="#">Now try it out!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section-->
+        <section id="contact" class="bg-light">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8 text-center">
                         <h2>Contact us</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
                     </div>
@@ -77,7 +91,8 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+            <div class="container px-4"><p class="m-0 text-center text-white">2022 © Sign Now Tech Solutions</p>
+            	<p class="m-0 text-center text-white">Made by Shadan Abadi, Shachar Biton, Leena Abdeen, Steve Donetz, MEET Y2 Final Project.</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

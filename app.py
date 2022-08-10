@@ -47,7 +47,7 @@ def home():
         response = requests.request("POST", url, json=payload, headers=headers)
         dict1 = json.loads(response.content)
         tran = dict1 ['data']['translations']['translatedText']
-    return render_template("main.html", tran = tran)
+    return render_template("main.html")
 
 @app.route('/about_us')
 def about_us():

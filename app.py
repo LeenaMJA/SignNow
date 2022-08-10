@@ -3,18 +3,18 @@ from flask import session as login_session
 import requests
 import json
 
-firebaseConfig = {
-  "apiKey": "AIzaSyBAYdzEpZ4zVCTjiLIrH3abTjYCOsenYaQ",
-  "authDomain": "signnow-ea247.firebaseapp.com",
-  "projectId": "signnow-ea247",
-  "storageBucket": "signnow-ea247.appspot.com",
-  "messagingSenderId": "448511328030",
-  "appId": "1:448511328030:web:e7b6b5a8949b41ddc5130f",
-  "measurementId": "G-8S05LPBBQ0"}
+# firebaseConfig = {
+#   "apiKey": "AIzaSyBAYdzEpZ4zVCTjiLIrH3abTjYCOsenYaQ",
+#   "authDomain": "signnow-ea247.firebaseapp.com",
+#   "projectId": "signnow-ea247",
+#   "storageBucket": "signnow-ea247.appspot.com",
+#   "messagingSenderId": "448511328030",
+#   "appId": "1:448511328030:web:e7b6b5a8949b41ddc5130f",
+#   "measurementId": "G-8S05LPBBQ0"}
 
-firebaseConfig = pyrebase.initialize_app(firebaseConfig)
-auth = firebase.auth()
-db = firebase.database()
+# firebaseConfig = pyrebase.initialize_app(firebaseConfig)
+# auth = firebase.auth()
+# db = firebase.database()
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['SECRET_KEY'] = 'super-secret-key'

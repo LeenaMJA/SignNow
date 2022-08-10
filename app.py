@@ -66,6 +66,10 @@ def join_us():
 def about_us():
     return render_template("aboutus.html")
 
+@app.route('/services')
+def services():
+    return render_template("services.html")
+
 
 
 # Your code should be above

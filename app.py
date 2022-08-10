@@ -38,16 +38,20 @@ payload = {
 
 
 # Your code should be below
+
+@app.route('/')
+def home():
+        # response = requests.request("POST", url, json=payload, headers=headers)
+        # dict1 = json.loads(response.content)
+        # tran = dict1 ['data']['translations']['translatedText']
+    return render_template("main.html")
+
+
 @app.route('/join_us')
 def join_us():
     return render_template("join_us.html")
 
-@app.route('/')
-def home():
-        response = requests.request("POST", url, json=payload, headers=headers)
-        dict1 = json.loads(response.content)
-        tran = dict1 ['data']['translations']['translatedText']
-    return render_template("main.html")
+
 
 @app.route('/about_us')
 def about_us():

@@ -72,7 +72,7 @@ def join_us():
         users={"firstname": firstname, "lastname": lastname, "phonenumber": phonenumber,
          "emailad": emailad, "extra":extra, "extra1": extra1}
         db.child("users").push(users)
-        return render_template("join_us.html", message="thank you for filling the form, feel free to explore our website")
+        return render_template("join_us.html", message="Thank you for filling the form! Feel free to explore our website!")
 
 
 

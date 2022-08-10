@@ -50,10 +50,11 @@ payload = {
 
 @app.route('/')
 def home():
-        # response = requests.request("POST", url, json=payload, headers=headers)
-        # dict1 = json.loads(response.content)
-        # tran = dict1 ['data']['translations']['translatedText']
-    return render_template("main.html")
+    response = requests.request("POST", url, json=payload, headers=headers)
+    dict1 = json.loads(response.content)
+    demo = dict1 ['data']['translations']['translatedText']
+    return render_template("main.html" , demo = demo)
+
 
 
 @app.route('/join_us', methods= ["POST", "GET"])

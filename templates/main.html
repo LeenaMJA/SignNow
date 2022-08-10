@@ -18,18 +18,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="/">Homepage</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="/about_us">About us!</a></li>
                         <li class="nav-item"><a class="nav-link" href="/join_us">Join us!</a></li>
                         <li class="nav-item"><a class="nav-link" href="/services">Our services!</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">not</a></li>
-                                <li><a class="dropdown-item" href="#">also</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -39,22 +31,22 @@
             <div class="container px-4 text-center">
                 <h1 class="fw-bolder">Sign Now</h1>
                 <p class="lead">Live sign language for the deaf community.</p>
-                <a class="btn btn-lg btn-dark" href="#">Use our web-app!</a>
+                <a class="btn btn-lg btn-dark" href="/services">Use our web-app!</a>
                 <a class="btn btn-lg btn-dark" href="#tutorial">For a tutorial!</a>
             </div>
 
         </header>
         <!-- About section-->
-        <section id="about" class = "bg-primary bg-gradient" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <section id="about" style="padding-top: 4rem; padding-bottom: 4rem; background: url('https://static.wixstatic.com/media/3acf29_7c104433a69b489c8e5aaf61b4c9a35a~mv2.jpg/v1/fill/w_1429,h_349,al_c,q_85,enc_auto/3acf29_7c104433a69b489c8e5aaf61b4c9a35a~mv2.jpg');">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <p id = "first" class="lead text-center">Approximately 90,000,000 deaf people start their lives at a disadvantage due to the fact that the hearing majority are unfamiliar with their language - sign language.</p>
-                       <p id = "tran"> {{demo}}</p>
+                        <p id = "first" class="lead text-center" style="color: #f8f9fa;">Approximately 90,000,000 deaf people start their lives at a disadvantage due to the fact that the hearing majority are unfamiliar with their language - sign language.</p>
+                       <p id = "tran" style="color:#f8f9fa"> {{demo}}</p>
 
-                         <button class = "btn btn-lg btn-dark align-self-center"  onclick="english()">English
+                         <button class = "btn btn-lg btn-light align-self-center"  onclick="english()">English
                          </button>
-                         <button class = "btn btn-lg btn-dark align-self-center" onclick="arabic()">Arabic</button>
+                         <button class = "btn btn-lg btn-light align-self-center" onclick="arabic()">Arabic</button>
 
                     </div>
                 </div>
@@ -63,10 +55,18 @@
         <!-- Services section-->
         <section class="bg-light" id="app_explain">
             <div class="container px-4">
-                <div class="row gx-4 justify-content-sm-end">
+                <div class="row justify-content-sm-end">
+                    <img src="{{url_for('static', filename='phone1.png')}}" style="height: 650px; width: 400px; position: relative; right: 250px;">
                     <div class="col-lg-5">
-                        <h2>Our app is here to help!</h2>
-                        <p class="lead" style="line-height: 1.7;">Our innovative web-app is a service-based technology that connects between the deaf community and sign language interpreters.<br>We offer a variety of video call options including call-back, on-demand, and pre-scheduled calls, all with minimum clicks.<br>And it is all <b>FOR FREE!</b></p>
+                        <h2 style="padding-bottom: 10px;"><b>Our app is here to help!</b></h2>
+                        <p class="lead" style="line-height: 1.7; font-size: 22px;">Our innovative web-app is a service-based technology that connects between the deaf community and sign language interpreters.<br>We offer a variety of video call options including call-back, on-demand, and pre-scheduled calls, all with minimum clicks.<br>And it is all <b>FOR FREE!</b></p>
+                        <ul style="font-size: 20px;">
+                            <li>Easy to use!</li>
+                            <li>Accecible!</li>
+                            <li>The Deaf Community - front and center!</li>
+                            <li>Immidiate calls or order in advance!</li>
+                            <li>Your calls are safe and secure!</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                         <br><br>
                         	<iframe width="560" height="315" src="https://www.youtube.com/embed/z8Mm88jepsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         	<br><br><br>
-                        	<a class="btn btn-lg btn-dark align-self-center" href="#">Now try it out!</a>
+                        	<a class="btn btn-lg btn-dark align-self-center" href="/services">Now try it out!</a>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ firebaseConfig = {
   "storageBucket": "signnow-ea247.appspot.com",
   "messagingSenderId": "448511328030",
   "appId": "1:448511328030:web:e7b6b5a8949b41ddc5130f",
-  "measurementId": "G-8S05LPBBQ0"
+  "measurementId": "G-8S05LPBBQ0"}
 
 firebaseConfig = pyrebase.initialize_app(firebaseConfig)
 auth = firebase.auth()

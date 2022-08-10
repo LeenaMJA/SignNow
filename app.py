@@ -1,5 +1,6 @@
 from flask import Flask, redirect, request, render_template, url_for
 from flask import session as login_session
+import pyrebase
 
 
 firebaseConfig = {
@@ -9,7 +10,10 @@ firebaseConfig = {
   "storageBucket": "signnow-ea247.appspot.com",
   "messagingSenderId": "448511328030",
   "appId": "1:448511328030:web:e7b6b5a8949b41ddc5130f",
-  "measurementId": "G-8S05LPBBQ0"
+  "measurementId": "G-8S05LPBBQ0",
+   "databaseURL": "https://signnow-ea247-default-rtdb.europe-west1.firebasedatabase.app/"
+
+}
 
 firebaseConfig = pyrebase.initialize_app(firebaseConfig)
 auth = firebase.auth()

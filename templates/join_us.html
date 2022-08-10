@@ -37,10 +37,8 @@
         <!-- Header-->
         <header class="bg-primary bg-gradient text-white">
             <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Sign Now</h1>
-                <p class="lead">Live sign language for the deaf community.</p>
-                <a class="btn btn-lg btn-light" href="#">Use our web-app!</a>
-                <a class="btn btn-lg btn-light" href="#">For a tutorial!</a>
+                <h1 class="fw-bolder">Join our cause!</h1>
+                <p class="lead">Sign up to help the deaf community</p>
             </div>
         </header>
         <!-- About section-->
@@ -48,36 +46,53 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <p class="lead text-center">Approximately 90,000,000 deaf people start their lives at a disadvantage due to the fact that the hearing majority are unfamiliar with their language - sign language.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services section-->
-        <section class="bg-light" id="services">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Our app is here to help!</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact section-->
-        <section id="contact">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Contact us</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                      <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>First Name</label>
+      <input type="text" class="form-control" id="first" placeholder="First Name" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Last Name</label>
+      <input type="text" class="form-control" id="last" placeholder="Last Name" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="text" class="form-control" id="phone" placeholder="Phone Number" max="15" required>
+  </div>
+  <div class="form-group">
+    <label>Email Adress</label>
+    <input type="Email" class="form-control" id="email" placeholder="Email Adress" required>
+  </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputState">Signing Up For</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option required>
+        <option>Service</option>
+        <option>bussiness</option>
+        <option>interpeter</option>
+      </select>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Company Name (Required or businesses only</label>
+      <input type="text" class="form-control" id="company" placeholder="Company Name">
+      <br>
+        <button type="submit" class="btn btn-primary">Sign Now.Right Now</button>
+    </div>
+</form>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+            <div class="container px-4"><p class="m-0 text-center text-white">2022 © Sign Now Tech Solutions; Sign Language Interpretation Technologies.
+
+Equalizes the reality for the deaf community.</p>
+              <p class="m-0 text-center text-white">Made by Shadan Abadi, Shachar Biton, Leena Abdeen, Steve Donetz, MEET Y2 Final Project.</p>/div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -91,43 +106,7 @@
         <p>make sure to fill all the boxes</p>
     {% endif %}-->
 
-	<form action="/create" method="POST">
-
-     <p align="center">
-	<label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname" required><br><br>
-        
-        <p align="center">
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname" required> <br><br>
-        <p align="center">
-
-  <label for="num">Phone number:</label>
-  <input type="text" id="num" name="num"  pattren="(0-9){9}" required><br><br>
-        <p align="center">
-
-  <label for="email">Email adress:</label>
-  <input type="text" id="email" name="email" required><br><br>
-        <p align="center">
-
-  <label for="company">Company name:</label>
-  <input type="text" id="company" name="company"><br><br>
-        <p align="center">
-
-   <label for="what">signing up for:</label>
-<select id="what" name="what">
-  <option value="service">service</option>
-  <option value="bussiness">bussiness</option>
-  <option value="interpeter">interpeter</option>
- 
-</select> 
-
-  	<input type="submit"><br><br>
-
-
-	</form>
-
-
+	
 
 </body>
 </html>

@@ -46,43 +46,51 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                      <form>
+                      <form method="POST" action="/join_us">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>First Name</label>
-      <input type="text" class="form-control" id="first" placeholder="First Name" required>
+      <input type="text" class="form-control" id="first" placeholder="First Name" name="first1" required>
     </div>
     <div class="form-group col-md-6">
       <label>Last Name</label>
-      <input type="text" class="form-control" id="last" placeholder="Last Name" required>
+      <input type="text" class="form-control" id="last" placeholder="Last Name" name="last1"required>
     </div>
   </div>
   <div class="form-group">
     <label>Phone Number</label>
-    <input type="text" class="form-control" id="phone" placeholder="Phone Number" max="15" required>
+    <input type="text" class="form-control" id="phone" placeholder="Phone Number" max="15" name="phonenum" required>
   </div>
   <div class="form-group">
     <label>Email Adress</label>
-    <input type="Email" class="form-control" id="email" placeholder="Email Adress" required>
+    <input type="Email" class="form-control" id="email" placeholder="Email Adress" name="emailadress"required>
   </div>
 
     <div class="form-group col-md-4">
-      <label for="inputState">Signing Up For</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option required>
-        <option>Service</option>
-        <option>bussiness</option>
-        <option>interpeter</option>
-      </select>
+      <label for="inputState">Signing Up For</label><br>
+        <input type="radio" name="extra" value="customer">
+        <label>Services</label><br>
+         <input type="radio" name="extra" value="company">
+         <label>business</label><br>
+          <input type="radio" name="extra" value="deaf">
+          <label>interpeter</label><br>
+          <input type="radio" name="extra" value="learn">
+          <label>courses</label><br>
+      </select><br>
     </div>
     <div class="form-row">
     <div class="form-group col-md-6">
       <label>Extra Information</label>
-      <input type="text" class="form-control" id="company" placeholder="Company Name,pre ordering calls, ETC...">
+      <input type="text" class="form-control" id="company" placeholder="Company Name,pre ordering calls, ETC..." name="extrainfo">
       <br>
         <button type="submit" class="btn btn-primary">Sign Now.Right Now</button>
     </div>
 </form>
+
+                  <h3>{{message}}</h3>
+
+
+
                     </div>
                 </div>
             </div>
@@ -106,7 +114,6 @@ Equalizes the reality for the deaf community.</p>
         <p>make sure to fill all the boxes</p>
     {% endif %}-->
 
-	
 
 </body>
 </html>

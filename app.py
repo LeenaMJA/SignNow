@@ -56,9 +56,23 @@ def home():
     return render_template("main.html")
 
 
-@app.route('/join_us')
+@app.route('/join_us', methods= ["POST", "GET"])
 def join_us():
-    return render_template("join_us.html")
+    if request.method=="GET":
+        return render_template("join_us.html")
+
+    else:
+        firstname=request.form["first1"]
+        lastname=request.form["last1"]
+        phonenumber=request.form["phonenum"]
+        emailad=request.form["emailadress"]
+        extra=request.form["extra"]
+        extra1=request.form["extrainfo"]
+        users={"firstname": firstname, "lastname": lastname, "phonenumber": phonenumber,
+         "emailad": emailad, "extra":extra, "extra1": extra1}
+        db.child("users").push(users)
+        return render_template("join_us.html", message="thank you for filling the form, feel free to explore our website")
+
 
 
 

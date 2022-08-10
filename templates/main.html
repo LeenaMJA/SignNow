@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Scrolling Nav - Start Bootstrap Template</title>
+        <title>Home | Sign Now</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../static/css/styles.css" rel="stylesheet"/>
+        <link href="{{url_for('static', filename = 'css/styles.css')}}" rel="stylesheet"/>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -18,9 +18,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About us!</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Join us!</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/aboutus">About us!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/join_us">Join us!</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -48,7 +48,8 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <p class="lead text-center">Approximately 90,000,000 deaf people start their lives at a disadvantage due to the fact that the hearing majority are unfamiliar with their language - sign language.</p>
+                        <p class="lead text-center" style="display:none;">Approximately 90,000,000 deaf people start their lives at a disadvantage due to the fact that the hearing majority are unfamiliar with their language - sign language.</p>
+                        <p class="lead text-center">sfjhsdjkfhaskdjfhasjkdfhjkasd</p>
                     </div>
                 </div>
             </div>
@@ -101,5 +102,17 @@ Equalizes the reality for the deaf community.</p>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <button onclick="toggleText()">button</button>
+        <p id="Myid">{{tran}}</p>
+        <script>
+        function toggleText(){
+          var x = document.getElementById("Myid");
+          if (x.style.visibility == "hidden") {
+            x.style.visibility = "visible";
+          } else {
+            x.style.visibility = "hidden";
+          }
+        }
+        </script>
     </body>
 </html>

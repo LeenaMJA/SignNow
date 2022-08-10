@@ -13,7 +13,7 @@
         <title>Scrolling Nav - Start Bootstrap Template</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet"/>
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet"/>
 
 </head>
 <body>
@@ -39,9 +39,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About us!</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Join us!</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about_us">About us!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/join_us">Join us!</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -92,7 +92,7 @@ Over the past 5 years, we have succeeded in bringing international recognition t
                     <div class="col-lg-8">
                         <h2>Our Team</h2>
                         <center>
-                        <img src = "finall.png" alt="Paris" class="center" height="500px"> 
+                        <img src="{{url_for('static', filename='finall.png')}}  "height="500px"> 
                         </center>
                     </div>
                 </div>
